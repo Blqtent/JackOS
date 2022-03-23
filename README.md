@@ -1,2 +1,2 @@
-# JackOS
-The Official Jack Operating System written in Jack, for the nand2tetris course
+# MicroUnix
+MicroUnix is an operating system developed by a complete idiot lol

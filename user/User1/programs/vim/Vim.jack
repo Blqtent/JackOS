@@ -1,0 +1,30 @@
+//TODO: keep a text buffer.
+
+class Vim {
+	static String name;
+	static File f;
+	
+	function void init(){
+		let name = String.new(64);
+		do Output.printString("Welcome to MicroVim");
+		do Output.printString("what do you wanna call this text file?")
+		let name = Keyboard.readLine();
+		return;
+	}
+	
+	function boolean Main (){
+		var String x;
+		let x = String.new(128);
+		do Vim.init();
+		let f = File.new(name, true);
+		do f.open();
+		
+		while (~(x == 140)) {
+			let x = Keyboard.readLine();
+			do f.writeLine(x);
+		}
+		do x.dispose();
+		return true;
+	}
+	
+}

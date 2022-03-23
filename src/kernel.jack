@@ -1,0 +1,7 @@
+class kernel {
+	function void kernel(){
+		do Shell.init();
+		do Shell.run();
+		return;
+	}
+}

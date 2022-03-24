@@ -13,4 +13,13 @@ mem bank 0:
 
 mem bank 1:
 
+0 - 65536 = heap
+
+mem bank 2 & 3:
+
+0 - 131072 = code segment
+
+
+disk size: 16 MB
+max file size: 8kb
 
